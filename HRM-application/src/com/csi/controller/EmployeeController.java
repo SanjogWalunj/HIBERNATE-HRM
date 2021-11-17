@@ -11,16 +11,23 @@ public class EmployeeController {
 	static EmployeeServiceIMPL employeeServiceIMPL = new EmployeeServiceIMPL();
 
 	public static void main(String[] args) {
-savedata();
+		savedata();
+		//savebulkdata();
+		//updatedata();
+		//getdatabyid();
+		// getalldata();
+		//deletealldata();
+		//deletedatabyid();
+		
 	}
 
 	static void savedata() {
 		Employee employee = new Employee();
-		employee.setEmpName("rata");
-		employee.setEmpAddress("pune");
-		employee.setEmpSalary(12345);
+		employee.setEmpName("SANJOG");
+		employee.setEmpAddress("NASHIK");
+		employee.setEmpSalary(25123.25);
 		employee.setEmpEmailId("s@123");
-		employee.setEmpContactNumber(9850369696L);
+		employee.setEmpContactNumber(8850369696L);
 		employeeServiceIMPL.savedata(employee);
 
 	}
@@ -59,7 +66,7 @@ savedata();
 	}
 
 	static void getdatabyid(int empId) {
-System.out.println(employeeServiceIMPL.getdatabyid(empId));
+		System.out.println(employeeServiceIMPL.getdatabyid(empId));
 	}
 
 	static void getalldata() {
